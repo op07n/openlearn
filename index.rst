@@ -1,8 +1,8 @@
 
-Aquatic mammals
-===============
+Digital communications
+======================
 
-Content generated from the OpenLearn Unit `Aquatic mammals <https://www.open.edu/openlearn/nature-environment/aquatic-mammals/content-section-0>`_.
+Content generated from the OpenLearn Unit `Digital communications <https://www.open.edu/openlearn/science-maths-technology/computing-ict/digital-communications/content-section-0>`_.
 
 
 Contents:
