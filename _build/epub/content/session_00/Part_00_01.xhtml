@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 Optical fibre communication: introduction</title>
+    <link rel="stylesheet" href="../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="1-Optical-fibre-communication:-introduction">
+<h1>1 Optical fibre communication: introduction</h1>
+<div class="section" id="1.1-Uses-of-optical-fibre-in-communication">
+<h2>1.1 Uses of optical fibre in communication</h2>
+<p>Using optical fibres, very high data rates (gigabits per second and higher) can be transmitted over long distances (tens of kilometres) without amplifiers or regenerators. As a consequence, optical fibre has completely superseded copper wires as the primary medium for cabled transmission over long distances. Until recently, however, optical fibre has been used less in LANs, where twisted-pair copper cable has been dominant. Similarly, fibre has been slow to penetrate the access network, from
+homes or businesses to the first telephone exchange.</p>
+<p>Here I will make the distinction between the <em>access network</em> (from homes or businesses to the first telephone exchange – also called the last mile, local loop, or subscriber network) and the <em>core network</em> (between exchanges, also called the trunk network).</p>
+<p>As demand for capacity has risen, however, the merits of optical fibre become ever more significant, and fibre is now being used even in LANs and the access network.</p>
+<p>The way in which fibre is used is also changing. Originally, fibre was used just for stand-alone point-to-point links. Signal processing – amplification, regeneration, switching and routeing, for example – was done in electronic components. Now, however, devices for optical signal processing have been developed so that ‘all-optical networking’ is possible.</p>
+<p>In this unit the basics of communication over optical fibre are covered in Section 2 and the components such as amplifiers and switches are introduced in Section 3.</p>
+</div>
+<div class="section" id="1.2-Wavelength-or-frequency?">
+<h2>1.2 Wavelength or frequency?</h2>
+<p>In this unit you will find frequent references both to the wavelength of light and the frequency of light. It is important to be able to work with both, and convert from one to the other. In the context of optical-fibre communication, the light radiation we are concerned with is usually in the infrared region of the spectrum.</p>
+<p>To identify the position in the electromagnetic spectrum it is usual to refer to the wavelength of light, rather than its frequency. Thus I will refer to the ‘1300 nm window’ rather than the 2﻿.﻿3 × 10﻿14 Hz (230 THz) window. T is the SI prefix ‘tera’, the multiplier for 1012.</p>
+<p>When talking about the details of the optical spectrum both wavelengths and frequencies are used. In dense wavelength division multiplexing, for example, the carriers are often referred to by their frequencies rather than their wavelengths, and it is important to be able to convert readily from one to the other.</p>
+<p>The conversion between wavelength (lambda, λ) and frequency (<em>f</em>) uses the formula:</p>
+<p><img alt="figure images/t305_ue001i.gif" src="../../_images/t305_ue001i.gif" /></p>
+<p>where <em>c</em> is the speed of light in free space (i.e. in a vacuum) which is</p>
+<p>3.00 × 108 m s−1 to three significant figures. This may be rearranged to give:</p>
+<p><img alt="figure images/t305_ue002i.gif" src="../../_images/t305_ue002i.gif" /></p>
+<p>Note that because the speed used is that of light in free space, references to wavelength are to the wavelength of the light in free space, which is different from (i.e. longer than) the wavelength of the same light in a fibre. When light enters a fibre from free space (or air) it slows down but the frequency remains the same, so the wavelength decreases.</p>
+<p>You need to be careful when converting between wavelength and frequency spacings or ranges, rather than individual values. For example, let’s suppose you know the output from a light-emitting diode (LED) contains wavelengths between 1300 nm and 1320 nm so that the spectral width is 20 nm and you want to know the frequency range in hertz.</p>
+<p>To get the exact frequency range you need to convert each end of the range to frequencies and subtract one from the other. Thus the spectrum of the LED output in this example extends from</p>
+<p><img alt="figure images/t305_ue003i.gif" src="../../_images/t305_ue003i.gif" /></p>
+<p>to</p>
+<p><img alt="figure images/t305_ue004i.gif" src="../../_images/t305_ue004i.gif" /></p>
+<p>The spectral range expressed in frequencies is therefore:</p>
+<p><img alt="figure images/t305_ue005i.gif" src="../../_images/t305_ue005i.gif" /></p>
+<p>Notice that you have to be careful with the accuracy of the intermediate steps in this calculation because it involves subtracting two large and similar numbers.</p>
+<p>For small spectral widths there is an approximation formula to convert between spectral width measured in wavelength (Δλ) and spectral width measured in frequency (Δ<em>f</em>):</p>
+<p><img alt="figure images/t305_ue006i.gif" src="../../_images/t305_ue006i.gif" /></p>
+<p>where λ and <em>f</em> are taken at the mid-point of the range. This approximation is valid provided the fractions are small – less than about 1/10, for which we require Δλ &lt; λ/10. In fact, because the approximation avoids the need to subtract two large numbers, it can be a better way of doing the calculation.</p>
+<p>Often we may know λ but not <em>f</em>, so we can use <em>f</em> = <em>c/λ</em> to get:</p>
+<p><img alt="figure images/t305_ue007i.gif" src="../../_images/t305_ue007i.gif" /></p>
+<p>and therefore:</p>
+<p><img alt="figure images/t305_ue008i.gif" src="../../_images/t305_ue008i.gif" /></p>
+<p>Using the example of the LED again, taking λ in the middle of the range at 1310 nm gives:</p>
+<p><img alt="figure images/t305_ue009i.gif" src="../../_images/t305_ue009i.gif" /></p>
+<div class="section" id="SAQ-1">
+<h3>SAQ 1</h3>
+<div class="section" id="Question">
+<h4>Question</h4>
+<p>Suppose an LED has a spectrum that extends from 1540 nm to 1560 nm. Calculate:</p>
+<ol class="arabic simple">
+<li><p>its spectral width in nm</p></li>
+<li><p>its centre frequency in Hz</p></li>
+<li><p>its spectral width in Hz.</p></li>
+</ol>
+</div>
+<div class="section" id="Answer">
+<h4>Answer</h4>
+<ol class="arabic simple">
+<li><p>Its spectral width in nanometres is 1560 – 1540=20 nm.</p></li>
+<li><p>Its central wavelength is 1550 nm, which corresponds to a frequency of</p></li>
+</ol>
+<p><img alt="figure images/t305_ue019i.gif" src="../../_images/t305_ue019i.gif" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Its spectrum extends from</p></li>
+</ol>
+<p><img alt="figure images/t305_ue020i.gif" src="../../_images/t305_ue020i.gif" /></p>
+<p>to</p>
+<p><img alt="figure images/t305_ue021i.gif" src="../../_images/t305_ue021i.gif" /></p>
+<p>which is a spectral width of</p>
+<p><img alt="figure images/t305_ue022i.gif" src="../../_images/t305_ue022i.gif" /></p>
+<p>Alternatively, this can be calculated using the approximation formula:</p>
+<p><img alt="figure images/t305_ue023i.gif" src="../../_images/t305_ue023i.gif" /></p>
+<p>Notice that the spectral width of the LED in this SAQ measured in terms of <em>wavelength</em> was the same as that in the example given in Section 1.2, i.e. 20 nm. The spectral width measured in frequency is different, however: 3.5 × 1012 in one case and 2.5 × 1012 here. They are different because the centre wavelength is different.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
